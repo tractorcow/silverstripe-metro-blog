@@ -1,0 +1,23 @@
+{
+	"name": "tractorcow/silverstripe-metro-blog",
+	"description": "Metro blog sub-theme for Silverstripe",
+	"type": "silverstripe-theme",
+	"keywords": ["silverstripe", "theme", "metro", "blog"],
+	"authors": [
+		{
+			"name": "Damian Mooyman",
+			"email": "damian.mooyman@gmail.com"
+		}
+	],
+	"support": {
+		"issues": "https://github.com/tractorcow/silverstripe-metro-blog/issues"
+	},
+	"require": {
+		"silverstripe/framework": ">=3.0",
+		"silverstripe/cms": ">=3.0",
+		"tractorcow/silverstripe-metro": "3.0.*-dev"
+	},
+	"extra": {
+		"installer-name": "metro_blog"
+	}
+}
