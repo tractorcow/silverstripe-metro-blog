@@ -1,28 +1,33 @@
-<div class="blogSummary">
-	<h2 class="postTitle"><a href="$Link" title="<% _t('BlogSummary_ss.VIEWFULL', 'View full post titled -') %> '$Title'">$MenuTitle</a></h2>
-	<p class="authorDate"><% _t('BlogSummary_ss.POSTEDBY', 'Posted by') %> $Author.XML <% _t('BlogSummary_ss.POSTEDON', 'on') %> $Date.Long | <a href="$Link#PageComments_holder" title="View Comments Posted">$Comments.Count <% _t('BlogEntry_ss.COMMENTS', 'Comments') %></a></p>
-	<% if TagsCollection %>
-		<p class="tags">
-			<% _t('BlogSummary_ss.TAGS','Tags') %>:
-			<% loop TagsCollection %>
-				<a href="$Link" title="View all posts tagged '$Tag'" rel="tag">$Tag</a><% if not Last %>,<% end_if %>
-			<% end_loop %>
-		</p>
+<a href="$Link">	
+	<% if Image %>
+		<div class="Icon">
+			$Image.CroppedImage(100,100)
+		</div>
+		<div class="data">
 	<% end_if %>
+		<h3><i class="icon-arrow-right-3"></i>$MenuTitle</h3>
+		<p><small><i class="icon-user"></i>$Author.XML &nbsp; <i class="icon-calendar"></i>$Date.Long</small></p>
+		<% if BlogHolder.ShowFullEntry %>
+			$Content
+		<% else %> 
+			<p>$Content.Summary</p>
+		<% end_if %>
+	<% if Image %>
+		</div>
+	<% end_if %>
+</a>
 
-	<% if BlogHolder.ShowFullEntry %>
-		$Content
-	<% else %> 
-		<p>$Content.FirstParagraph(html)</p>
-	<% end_if %>
-	
-	<p class="blogVitals">
-		<a href="$Link#PageComments_holder" class="comments" title="View Comments for this post">
-			$Comments.Count <% _t('BlogSummary_ss.SUMMARYCOMMENTS','comment(s)') %>
-		</a> 
-		| 
-		<a href="$Link" class="readmore" title="Read Full Post">
-			<% _t('BlogSummary_ss.READFULLPOST','Read the full post') %>
-		</a>
-	</p>
-</div>
+<% if Comments %>
+	<div class="badge top right strech bg-color-blue commentlink">
+		<i class="icon-comments-2"></i> <a href="$Link#PageComments_holder">$Comments.Count</a>
+	</div>
+<% end_if %>
+
+<% if TagsCollection %>
+	<div class="badge bottom right taglist">
+		<i class="icon-tag fg-color-pinkDark"></i>
+		<% loop TagsCollection %>
+			<a href="$Link" class="bg-color-pinkDark">$Tag</a>
+		<% end_loop %>
+	</div>
+<% end_if %>

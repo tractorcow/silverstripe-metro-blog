@@ -1,7 +1,49 @@
 
+@import "../../metro/scss/include/_colours.scss";
+
 // Allow sidebar text wrapping
 .metrouicss  {
 	.page-sidebar #Sidebar a {
 		white-space: normal;
+	}
+}
+
+// Fix for metro list clearing in wrong place on pages with sidebar
+.metrouicss .listview.blog-listview {
+	margin: 0;
+	
+	li {
+		width: auto;
+		background: #f9f9f9;
+		
+		// Allows entire widget to be wrapped safely in a hyperlink
+		a {
+			color: inherit;
+			font-family: inherit;
+			line-height: inherit;
+			font-weight: inherit;
+			font-size: inherit;
+		}
+
+		&:after {
+			clear: none;
+		}
+		
+		.commentlink:hover {
+			background: $blueDark !important;
+		}
+		
+		.taglist {
+			background: none;
+			padding: 0;
+			
+			a {
+				padding: 0 5px;
+				
+				&:hover {
+					background: $pink !important;
+				}
+			}
+		}
 	}
 }
