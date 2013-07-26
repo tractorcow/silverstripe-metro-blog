@@ -1,4 +1,4 @@
-<article class="page secondary with-sidebar">
+<article class="page secondary with-sidebar blog blog-list">
 	<header class="page-header">
 		<div class="page-header-content">
 			<h1>$Title.XML<small><% if SelectedTag %>

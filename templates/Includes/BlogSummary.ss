@@ -6,7 +6,7 @@
 		<div class="data">
 	<% end_if %>
 		<h3><i class="icon-arrow-right-3"></i>$MenuTitle</h3>
-		<p><small><i class="icon-user"></i>$Author.XML &nbsp; <i class="icon-calendar"></i>$Date.Long</small></p>
+		<p class="metadetails"><small><i class="icon-user"></i>$Author.XML &nbsp; <i class="icon-calendar"></i>$Date.Long</small></p>
 		<% if BlogHolder.ShowFullEntry %>
 			$Content
 		<% else %> 
