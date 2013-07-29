@@ -19,7 +19,7 @@
 
 <% if Comments %>
 	<div class="badge top right strech bg-color-blue commentlink">
-		<i class="icon-comments-2"></i> <a href="$Link#PageComments_holder">$Comments.Count</a>
+		<a href="$Link#PageComments_holder"><i class="icon-comments-2"></i> $Comments.Count</a>
 	</div>
 <% end_if %>
 
