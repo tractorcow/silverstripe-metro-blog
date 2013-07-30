@@ -3,7 +3,7 @@
 	<% include BlogSideBar %>
 	<div class="page-region">
 		<div class="page-region-content">
-			<div class="span-9">
+			<div class="span9">
 				<% if TagsCollection %>
 					<div class="taglist">
 						<% loop TagsCollection %>
@@ -28,9 +28,8 @@
 						</a>
 					</div>
 				<% end_if %>
-
-				$PageComments
 			</div>
+			$PageComments
 		</div>
 	</div>
 </article>

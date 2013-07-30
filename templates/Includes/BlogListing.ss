@@ -26,7 +26,9 @@
 					<h2><% _t('BlogHolder_ss.NOENTRIES', 'There are no blog entries') %></h2>
 				<% end_if %>
 
-				<% include BlogPagination %>
+				<% with BlogEntries %>
+					<% include Pagination %>
+				<% end_with %>
 			</div>
 		</div>
 	</div>
