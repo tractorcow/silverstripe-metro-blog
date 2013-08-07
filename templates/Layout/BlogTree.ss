@@ -2,6 +2,13 @@
 	<% include BlogListingHeader %>
 	<% include BlogSideBar %>
 	<div class="page-region">
+		<% if Content %>
+			<div class="page-region-content">
+				<div class="typography">
+					$Content
+				</div>
+			</div>
+		<% end_if %>
 		<div class="page-region-content blog-sections">
 			<% include BlogSections %>
 		</div>
