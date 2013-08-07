@@ -14,8 +14,9 @@
 					</div>
 				<% end_if %>
 				<p class="metadetails"><i class="icon-user"></i> $Author.XML &nbsp; <i class="icon-calendar"></i> $Date.Long</p>
-				$Content
-
+				<div class="typography">
+					$Content
+				</div>
 				<% if IsOwner %>
 					<div class="EditPost">
 						<a class="button bg-color-yellow" href="$EditURL" id="editpost" title="<% _t('BlogEntry_ss.EDITTHIS', 'Edit this post') %>">
