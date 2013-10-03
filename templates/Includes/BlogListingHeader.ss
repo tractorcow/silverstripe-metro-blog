@@ -8,6 +8,6 @@
 				<% _t('BlogHolder_ss.VIEWINGPOSTEDBY', 'Viewing entries posted by') %> $SelectedAuthor</h3>
 			<% end_if %></small>
 		</h1>
-		<a href="$BaseURL" class="back-button big page-back"></a>
+		<a href="<% if Parent %>$Parent.Link<% else %>$BaseURL<% end_if %>" class="back-button big page-back"></a>
 	</div>
 </header>
