@@ -9,9 +9,11 @@
 				</div>
 			</div>
 		<% end_if %>
-		<div class="page-region-content blog-sections">
-			<% include BlogSections %>
-		</div>
+		<% if Children %>
+			<div class="page-region-content blog-sections">
+				<% include BlogSections %>
+			</div>
+		<% end_if %>
 		<div class="page-region-content">
 			<% include BlogListing %>
 		</div>
