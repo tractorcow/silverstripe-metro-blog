@@ -1,4 +1,4 @@
-<li class="sticker sticker-color-green" data-role="dropdown">
+<li class="sticker sticker-color-green archive" data-role="dropdown">
 	<a><i class="icon-calendar"></i><% if Title %>$Title<% else %>Browse by Date<% end_if %></a>
 	<ul class="sub-menu light sidebar-dropdown-menu keep-opened open">
 		<% loop Dates %>

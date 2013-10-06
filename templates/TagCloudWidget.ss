@@ -1,4 +1,4 @@
-<li class="sticker sticker-color-pinkDark" data-role="dropdown">
+<li class="sticker sticker-color-pinkDark tagcloud" data-role="dropdown">
 	<a><i class="icon-tag"></i><% if Title %>$Title<% else %>Tag Cloud<% end_if %></a>
 	<ul class="sub-menu light sidebar-dropdown-menu keep-opened open">
 		<% loop TagsCollection %>
