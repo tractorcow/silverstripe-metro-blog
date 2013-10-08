@@ -19,5 +19,5 @@ and Valerio Battaglia. It has been packaged as an easy to import Silverstripe th
  * Extract all files into the 'themes/metro_blog' folder, or install using composer
 
 ```bash
-composer require "tractorcow/silverstripe-metro-blog": "3.0.*@dev"
+composer require "tractorcow/silverstripe-metro-blog" "3.0.*@dev"
 ```
